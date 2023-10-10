@@ -5,6 +5,11 @@ using Newtonsoft.Json;
 
 namespace E_Commerce.Services
 {
+
+    /// <summary>
+    /// n this example, the OrderService handles placing orders using the Outbox Pattern,
+    /// ensuring that the order details are stored in the outbox table within a transaction.
+    /// </summary>
     public class OrderService
     {
         private readonly OutboxDbContext _dbContext;

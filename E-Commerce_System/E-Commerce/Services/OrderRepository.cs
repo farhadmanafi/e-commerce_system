@@ -3,6 +3,9 @@ using MongoDB.Driver;
 
 namespace E_Commerce.Services
 {
+    /// <summary>
+    /// The OrderRepository handles interactions with MongoDB.
+    /// </summary>
     public class OrderRepository
     {
         private readonly IMongoCollection<Order> _orderCollection;

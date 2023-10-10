@@ -1,5 +1,9 @@
 ﻿namespace E_Commerce.Services
 {
+    /// <summary>
+    /// The OrderProcessor uses the Inbox Pattern to consume orders from RabbitMQ,
+    /// checks idempotency using the Idempotent Pattern, processes the order, and saves it to MongoDB. 
+    /// </summary>
     public class OrderProcessor
     {
         private readonly RabbitMqService _rabbitMqService;
